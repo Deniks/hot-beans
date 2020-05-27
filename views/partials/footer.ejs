@@ -1,0 +1,90 @@
+<!-- views/partials/footer.ejs -->
+
+<footer>
+  <ul>
+    <li>
+      <a href="#"><i class="fa fa-twitter-square"></i></a>
+    </li>
+    <li>
+      <a href="#"><i class="fa fa-facebook-square"></i></a>
+    </li>
+    <li>
+      <a href="#"><i class="fa fa-snapchat-square"></i></a>
+    </li>
+    <li>
+      <a href="#"><i class="fa fa-pinterest-square"></i></a>
+    </li>
+    <li>
+      <a href="#"><i class="fa fa-github-square"></i></a>
+    </li>
+  </ul>
+  <p>
+    <%= __("footer-reference") %>
+    <a href="https://pixabay.com/" target="_blank">pixabay</a>.
+  </p>
+  <p><%= __("footer-copyright") %></p>
+</footer>
+<script src="javascripts/intlTelInput.js"></script>
+<script>
+  var telInput = document.querySelector("#phone");
+  window.intlTelInput(telInput, {
+    separateDialCode: true,
+    utilsScript: "javascripts/utils.js",
+  });
+</script>
+<script class="iti-load-utils" async="" src="javascripts/utils.js"></script>
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=UA-163905799-1"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "UA-163905799-1");
+</script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "url": "https://www.hot-beans.herokuapp.com",
+    "name": "Hot Beans",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+371-277-39-868",
+      "contactType": "Customer service"
+    }
+  }
+</script>
+<script>
+  let endpoint = () => {
+    const section = document.getElementsByTagName("section");
+    section[1].scrollIntoView();
+  };
+</script>
+<% if (page !== "home" && page !== "error") { %>
+<script>
+  endpoint();
+</script>
+<% if (page === "careers") { %>
+<script>
+  let contactsEndpoint = () => {
+    const section = document.getElementsByTagName("section");
+    section[3].scrollIntoView();
+  };
+</script>
+<% } %> <% } %>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script
+  src="https://kit.fontawesome.com/f1ef95ef60.js"
+  crossorigin="anonymous"
+></script>
+<% if (page === "home" || page === "contacts" || page === "careers") { %>
+<script type="module" src="/javascripts/logic.js"></script>
+<% } %>
+<script type="module" src="/javascripts/animation.js"></script>
+<script type="module" src="/javascripts/loader.js"></script>

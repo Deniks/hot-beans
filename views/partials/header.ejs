@@ -1,0 +1,38 @@
+<!-- views/partials/header.ejs -->
+
+<header id="header">
+  <h2><a href="/">Hot Beans</a></h2>
+  <nav id="navigation">
+    <ul>
+      <li><a href="/"><%= __("navbar-link-1") %></a></li>
+      <li><a href="/products"><%= __("navbar-link-2") %></a></li>
+      <li><a href="/about"><%= __("navbar-link-3") %></a></li>
+      <li><a href="/careers"><%= __("navbar-link-4") %></a></li>
+      <li><a href="/contacts"><%= __("navbar-link-5") %></a></li>
+    </ul>
+    <div id="language-selector">
+      <a class="i18n-link" href="/localize/en">en</a>
+      <a class="i18n-link" href="/localize/ru">ru</a>
+      <a class="i18n-link" href="/localize/fr">fr</a>
+    </div>
+  </nav>
+
+  <div id="burger" class="burger burger-rotate">
+    <div class="burger-lines"></div>
+  </div>
+</header>
+
+<section class="hero">
+  <img
+    src="/images/human-min.jpg"
+    alt="hero background"
+    class="background-image"
+  />
+  <h1><%= __("hero-heading") %></h1>
+  <h3><%= __("hero-subheading") %></h3>
+  <% if (page !== "error") { %>
+  <a onClick="endpoint()" id="discoverBtn" class="btn">
+    <%= __("hero-button") %>
+  </a>
+  <% } %>
+</section>

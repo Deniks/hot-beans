@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include ../partials/head %>
+  </head>
+
+  <body>
+    <% include ../partials/preloader %>
+
+    <main>
+      <% include ../partials/header %>
+
+      <section id="our-work" class="our-work">
+        <h3 class="title"><%= __("our-work-title") %></h3>
+        <p>
+          <%= __("our-work-paragraph") %>
+        </p>
+        <hr />
+
+        <div class="image-layout">
+          <div class="item" title="Hot Beans Cafe E-Commerce Website">
+            <div class="content">
+              <h2 class="title"><%= __("our-work-item-1-title") %></h2>
+              <p class="copy">
+                <%= __("our-work-item-1-copy") %>
+              </p>
+              <button class="btn"><%= __("our-work-button") %></button>
+            </div>
+          </div>
+          <div class="item" title="Hot Beans Social Network Website">
+            <div class="content">
+              <h2 class="title"><%= __("our-work-item-2-title") %></h2>
+              <p class="copy"><%= __("our-work-item-2-copy") %></p>
+              <button class="btn"><%= __("our-work-button") %></button>
+            </div>
+          </div>
+          <div class="item" title="Hot BeansReal Estate E-Commerce Website">
+            <div class="content">
+              <h2 class="title"><%= __("our-work-item-3-title") %></h2>
+              <p class="copy">
+                <%= __("our-work-item-3-copy") %>
+              </p>
+              <button class="btn"><%= __("our-work-button") %></button>
+            </div>
+          </div>
+          <div class="item" title="Hot Beans Sports News Website">
+            <div class="content">
+              <h2 class="title"><%= __("our-work-item-4-title") %></h2>
+              <p class="copy">
+                <%= __("our-work-item-1-copy") %>
+              </p>
+              <button class="btn"><%= __("our-work-button") %></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <h3 class="title"><%= __("features-title") %></h3>
+        <p>
+          <%= __("features-paragraph") %>
+        </p>
+        <hr />
+
+        <ul class="grid">
+          <li>
+            <div class="icon">
+              <span class="feature-icon">
+                <i class="fas fa-drafting-compass"></i>
+              </span>
+            </div>
+            <h4><%= __("features-item-1-title") %></h4>
+            <p>
+              <%= __("features-item-1-paragraph") %>
+            </p>
+          </li>
+          <li>
+            <div class="icon">
+              <span class="feature-icon">
+                <i class="fa fa-cubes"></i>
+              </span>
+            </div>
+            <h4><%= __("features-item-2-title") %></h4>
+            <p>
+              <%= __("features-item-2-paragraph") %>
+            </p>
+          </li>
+          <li>
+            <div class="icon">
+              <span class="feature-icon">
+                <i class="fab fa-searchengin"></i>
+              </span>
+            </div>
+            <h4><%= __("features-item-3-title") %></h4>
+            <p>
+              <%= __("features-item-3-paragraph") %>
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="reviews">
+        <h3 class="title"><%= __("reviews-title") %></h3>
+
+        <p class="quote">
+          <%= __("reviews-item-1-quote") %>
+        </p>
+        <p class="author">— <%= __("reviews-item-1-author") %></p>
+
+        <p class="quote">
+          <%= __("reviews-item-2-quote") %>
+        </p>
+        <p class="author">— <%= __("reviews-item-2-author") %></p>
+
+        <p class="quote">
+          <%= __("reviews-item-3-quote") %>
+        </p>
+        <p class="author">— <%= __("reviews-item-3-author") %></p>
+      </section>
+
+      <section class="about-us" itemscope itemtype="http://schema.org/Company">
+        <h3 class="title"><%= __("about-us-title") %></h3>
+        <div>
+          <p>
+            <span itemprop="name">Hot Beans</span> <%=
+            __("about-us-paragraph-1") %>
+          </p>
+          <p>
+            <%= __("about-us-paragraph-2") %>
+          </p>
+          <div
+            itemprop="photo"
+            class="img small"
+            title="Hot Beans Team Work"
+          ></div>
+          <p>
+            <%= __("about-us-paragraph-3") %>
+          </p>
+        </div>
+      </section>
+
+      <section class="our-team" itemscope itemtype="http://schema.org/Team">
+        <h3 class="title"><%= __("our-team-title") %></h3>
+        <p>
+          <%= __("our-team-paragraph") %>
+        </p>
+        <ul class="grid">
+          <li>
+            <div class="team-member text-center">
+              <div class="team-img">
+                <img src="/images/team_1.jpg" alt="CEO" />
+                <a class="c-button-icon"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+              <h6 class="team-title"><%= __("our-team-item-1-title") %></h6>
+              <span><%= __("our-team-item-1-job") %></span>
+            </div>
+          </li>
+
+          <li>
+            <div class="team-member text-center">
+              <div class="team-img">
+                <img src="/images/team_2.jpg" alt="Software Engeneer" />
+                <a class="c-button-icon"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+              <h6 class="team-title"><%= __("our-team-item-2-title") %></h6>
+              <span><%= __("our-team-item-2-job") %></span>
+            </div>
+          </li>
+          <li>
+            <div class="team-member last text-center">
+              <div class="team-img">
+                <img src="/images/team_3.jpg" alt="Designer" />
+                <a class="c-button-icon"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+              <h6 class="team-title"><%= __("our-team-item-3-title") %></h6>
+              <span><%= __("our-team-item-3-job") %></span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contacts" class="contact">
+        <h3 class="title reveal"><%= __("contact-us-title") %></h3>
+        <p>
+          <%= __("contact-us-paragraph") %>
+        </p>
+        <hr />
+
+        <form id="contacts-form" encType="multipart/form-data">
+          <input
+            id="fName"
+            type="text"
+            name="fName"
+            placeholder="<%= __('contact-us-input-1') %>"
+            required
+          />
+          <input
+            id="lName"
+            type="text"
+            name="lName"
+            placeholder="<%= __('contact-us-input-2') %>"
+            required
+          />
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            autocomplete="off"
+            data-intl-tel-input-id="0"
+            placeholder="201-555-0123"
+            required
+          />
+          <input
+            id="email"
+            type="email"
+            name="email"
+            required
+            placeholder="<%= __('contact-us-input-3') %>"
+          />
+          <textarea
+            id="message"
+            name="message"
+            placeholder="<%= __('contact-us-textarea') %>"
+          ></textarea>
+          <div class="file-uploader">
+            <div class="resume">
+              <input type="file" class="file-input" id="resume" name="resume" />
+              <label id="resume-label" for="resume"
+                ><i class="fas fa-file-upload"></i
+                ><strong><%= __('contact-us-input-4') %></strong> <span></span
+              ></label>
+            </div>
+            <div class="cover-letter">
+              <input
+                type="file"
+                class="file-input"
+                id="cover-letter"
+                name="coverLetter"
+              />
+              <label id="cover-letter-label" for="cover-letter"
+                ><i class="fas fa-address-book"></i
+                ><strong><%= __('contact-us-input-5') %></strong> <span></span
+              ></label>
+            </div>
+          </div>
+          <button class="btn" type="submit">
+            <%= __("contact-us-form-button") %>
+          </button>
+        </form>
+      </section>
+      <% include ../partials/footer %>
+    </main>
+  </body>
+</html>

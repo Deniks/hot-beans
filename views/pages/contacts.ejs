@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include ../partials/head %>
+  </head>
+
+  <body>
+    <% include ../partials/preloader %> <% include ../partials/header %>
+
+    <section id="contacts" class="contact">
+      <h3 class="title reveal"><%= __("contact-us-title") %></h3>
+      <p>
+        <%= __("contact-us-paragraph") %>
+      </p>
+      <hr />
+      <form id="contacts-form" encType="multipart/form-data">
+        <input
+          id="fName"
+          type="text"
+          name="fName"
+          placeholder="<%= __('contact-us-input-1') %>"
+          required
+        />
+        <input
+          id="lName"
+          type="text"
+          name="lName"
+          placeholder="<%= __('contact-us-input-2') %>"
+          required
+        />
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+          autocomplete="off"
+          data-intl-tel-input-id="0"
+          placeholder="201-555-0123"
+          required
+        />
+        <input
+          id="email"
+          type="email"
+          name="email"
+          required
+          placeholder="<%= __('contact-us-input-3') %>"
+        />
+        <textarea
+          id="message"
+          name="message"
+          placeholder="<%= __('contact-us-textarea') %>"
+        ></textarea>
+        <div class="file-uploader">
+          <div class="resume">
+            <input type="file" class="file-input" id="resume" name="resume" />
+            <label id="resume-label" for="resume"
+              ><i class="fas fa-file-upload"></i
+              ><strong><%= __('contact-us-input-4') %></strong> <span></span
+            ></label>
+          </div>
+          <div class="cover-letter">
+            <input
+              type="file"
+              class="file-input"
+              id="cover-letter"
+              name="coverLetter"
+            />
+            <label id="cover-letter-label" for="cover-letter"
+              ><i class="fas fa-address-book"></i
+              ><strong><%= __('contact-us-input-5') %></strong> <span></span
+            ></label>
+          </div>
+        </div>
+        <button class="btn" type="submit">
+          <%= __("contact-us-form-button") %>
+        </button>
+      </form>
+    </section>
+    <% include ../partials/footer %>
+  </body>
+</html>

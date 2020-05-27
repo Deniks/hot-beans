@@ -1,0 +1,43 @@
+{
+  "name": "hot-beans",
+  "author": "Deniss Rezanovics",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "12.x"
+  },
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "debug": "^2.6.9",
+    "dotenv": "^8.2.0",
+    "ejs": "^2.6.2",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "express-locale": "^2.0.0",
+    "express-minify": "^1.0.0",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.4.0",
+    "google-auth-library": "^6.0.0",
+    "googleapis": "^49.0.0",
+    "helmet": "^3.22.0",
+    "http-errors": "^1.6.3",
+    "i18n": "^0.9.0",
+    "morgan": "^1.9.1",
+    "node-polyglot": "^2.4.0",
+    "nodemailer": "^6.4.6",
+    "scrollreveal": "^4.0.6",
+    "sendmail": "^1.6.1"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include ../partials/head %>
+  </head>
+  <body>
+    <% include ../partials/preloader %> <% include ../partials/header %>
+
+    <section id="our-work" class="our-work">
+      <h3 class="title"><%= __("our-work-title") %></h3>
+      <p>
+        <%= __("our-work-paragraph") %>
+      </p>
+      <hr />
+
+      <div class="image-layout">
+        <div class="item" title="Hot Beans Cafe E-Commerce Website">
+          <div class="content">
+            <h2 class="title"><%= __("our-work-item-1-title") %></h2>
+            <p class="copy">
+              <%= __("our-work-item-1-copy") %>
+            </p>
+            <button class="btn"><%= __("our-work-button") %></button>
+          </div>
+        </div>
+        <div class="item" title="Hot Beans Social Network Website">
+          <div class="content">
+            <h2 class="title"><%= __("our-work-item-2-title") %></h2>
+            <p class="copy"><%= __("our-work-item-2-copy") %></p>
+            <button class="btn"><%= __("our-work-button") %></button>
+          </div>
+        </div>
+        <div class="item" title="Hot BeansReal Estate E-Commerce Website">
+          <div class="content">
+            <h2 class="title"><%= __("our-work-item-3-title") %></h2>
+            <p class="copy">
+              <%= __("our-work-item-3-copy") %>
+            </p>
+            <button class="btn"><%= __("our-work-button") %></button>
+          </div>
+        </div>
+        <div class="item" title="Hot Beans Sports News Website">
+          <div class="content">
+            <h2 class="title"><%= __("our-work-item-4-title") %></h2>
+            <p class="copy">
+              <%= __("our-work-item-1-copy") %>
+            </p>
+            <button class="btn"><%= __("our-work-button") %></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <% include ../partials/contacts %> <% include ../partials/footer %>
+  </body>
+</html>

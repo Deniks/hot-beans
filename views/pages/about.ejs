@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include ../partials/head %>
+  </head>
+  <body>
+    <% include ../partials/preloader %> <% include ../partials/header %>
+    <section class="about-us" itemscope itemtype="http://schema.org/Company">
+      <h3 class="title"><%= __("about-us-title") %></h3>
+      <div>
+        <p>
+          <span itemprop="name">Hot Beans</span> <%= __("about-us-paragraph-1")
+          %>
+        </p>
+        <p>
+          <%= __("about-us-paragraph-2") %>
+        </p>
+        <div
+          itemprop="photo"
+          class="img small"
+          title="Hot Beans Team Work"
+        ></div>
+        <p>
+          <%= __("about-us-paragraph-3") %>
+        </p>
+      </div>
+    </section>
+    <% include ../partials/contacts %> <% include ../partials/footer %>
+  </body>
+</html>

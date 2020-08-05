@@ -18,7 +18,7 @@
     "dotenv": "^8.2.0",
     "ejs": "^2.6.2",
     "express": "^4.16.4",
-    "express-fileupload": "^1.1.7-alpha.3",
+    "express-fileupload": "^1.1.9",
     "express-locale": "^2.0.0",
     "express-minify": "^1.0.0",
     "express-session": "^1.17.1",

@@ -7,4 +7,6 @@ This is a landing page for my college Web Developement module closure. The aim i
 How to run it?
 ---
 1. Close and open the repository.
-2. 
+2. Install dependencies `npm i`.
+3. In your terminal run `npm start`.
+4. Enjoy the result :tada: :clap:	
